@@ -1,0 +1,28 @@
+FabWiki is an extremely minimal wiki created by Jeff Warren (jeff@unterbahn.com) for collecting and archiving information about the Haystack FabLab, in the absence of web access.
+
+Access it from any computer on the same local network (wifi hotspot) as the "Fab Mac 2" computer by going to the following address:
+
+http://fabwiki.local:3000
+
+The "Fab Mac 2" computer must be on, and connected to that network for the FabWiki to work; it's running on Fab Mac 2.
+
+########################################
+SOFTWARE
+
+The FabWiki software is open source under the GNU GPL v2 and can be found in the Sites folder for the "fab" user on Fab Mac 2:
+
+/Users/fab/Sites/fabwiki
+
+########################################
+BACKUP
+
+From time to time, it's not a bad idea to back up the FabWiki by copying the above folder and emailing it to yourself or burying it on a USB key in the woods.
+
+########################################
+BUGS ETC
+
+Just add bugs and issues and requests here, and occasionally email them to jeff@unterbahn.com, i guess:
+
+* Example: Bug title: "blablabla can't do this, it all breaks"
+* 
+* 

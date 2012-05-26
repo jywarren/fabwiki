@@ -1,0 +1,11 @@
+
+
+<h1><%= @wiki.title %></h1>
+<p><i><% if @wiki.current %>Latest revision<% else %>Revision<% end %> (#<%= @wiki.revision %>) by <%= @wiki.author %></i></p>
+<p><%= @wiki.nicebody %></p>
+
+<hr />
+<a href="/wikis/<%= @wiki.id %>/history">History</a> |
+<%= link_to 'Edit', edit_wiki_path(@wiki) %> |
+<%= link_to 'Destroy', "/wikis/destroy/"+@wiki.id.to_s, :confirm => 'Are you sure?', :method => :delete %> | 
+<%= link_to 'Back', wikis_path %>

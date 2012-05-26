@@ -1,0 +1,17 @@
+<h1>Listing wikis</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @wikis.each do |wiki| %>
+  <tr>
+    <td><b><a href="/wiki/<%= wiki.title %>"><%= wiki.title %></a></b></td>
+    <td> | <i>Updated <%= time_ago_in_words(wiki.updated_at) %> ago by <%= wiki.author %></i></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New wiki', new_wiki_path %>

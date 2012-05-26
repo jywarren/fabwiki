@@ -1,0 +1,10 @@
+<h2>History for <%= @wiki.title %></h2>
+
+<% @wiki.revisions.each do |rev| %>
+
+<div class="revision">
+<em><%= time_ago_in_words(rev.created_at) %> ago</em><br />
+<p><%= rev.body.length %> characters | <a href="/wikis/<%= rev.id %>">View</a> | Edited by <%= rev.author %></p>
+</div>
+
+<% end %>
