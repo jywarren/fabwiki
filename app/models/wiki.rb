@@ -34,7 +34,8 @@ class Wiki < ActiveRecord::Base
   end
 
   def nicebody
-    self.body.gsub("\n","<br />").gsub(/\[([a-z\-]+)\]/) {'[<a href="/wiki/'+$1+'">'+$1+'</a>]'}
+    require 'redcloth'
+    RedCloth.new(self.body).to_html.gsub(/\[([a-z\-]+)\]/) {'[<a href="/wiki/'+$1+'">'+$1+'</a>]'}
   end
 
 end
